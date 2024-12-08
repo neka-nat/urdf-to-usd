@@ -1,0 +1,24 @@
+[project]
+name = "urdf-to-usd"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "neka-nat", email = "nekanat.stock@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "scipy>=1.14.1",
+    "trimesh>=4.5.3",
+    "usd-core>=24.11",
+    "yourdfpy>=0.0.56",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.8.3",
+]
